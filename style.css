@@ -1,35 +1,102 @@
 body {
   background-color: lightgray;
-  background-image: url('hotel.jpg');
-  background-repeat: repeat-x;
+  background-image: url('samplepic.jpg');
   background-repeat: no-repeat;
   background-position: right top;
   background-attachment: scroll;
-  background-size: cover;
+  background-size: auto;
+  
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
+/* Container for responsive width */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Heading Styles */
 h1 {
-  color: #000000;
-  margin-left: 20px;
+  color: #ffffff;
   text-align: center;
-  /* background-color: #6adfee; */
-  /* border-style: dotted; */
-  /* border-left: 6px solid blue; */
-  /* border: 2px solid navy; */
   opacity: 1;
   border-radius: 15px;
   margin-top: 300px;
-  margin-left: -5px;
-  margin-right: -5px;
-  font-size: 50px;
-  font-family: Arial, Helvetica, sans-serif;
   
+  font-size: 50px;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
-p{
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+/* Responsive text */
+p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-family: Tahoma, Verdana, sans-serif;
+  white-space: nowrap;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
 
+h2 {
+  text-decoration: dotted underline;
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 50px;
+  text-decoration-color: skyblue;
+}
+
+p.thick {
+  font-variant: small-caps;
+  font-weight: bold; 
+  font-style: italic;
+  font-size: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+    margin-top: 150px;
+  }
+
+  p {
+    font-size: 16px;
+    white-space: normal; /* Allow text to wrap on small screens */
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p.thick {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+    margin-top: 100px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p.thick {
+    font-size: 22px;
+  }
 }
