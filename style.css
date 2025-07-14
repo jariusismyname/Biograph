@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-    margin: 0;
+    margin: 2;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #f0f0f0, #ffffff);
@@ -116,3 +116,32 @@ p {
         width: 90%;
     }
 }
+
+
+
+table,th,td {
+  position: auto;
+  /* left: 50%; */
+  /* align-self: center; */
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+}
+
+th{
+  height: 50px;
+}
+
+td{
+  text-align: center;
+  height: 50px;
+  vertical-align: top;
+}
+
+tr:nth-child(even) {background-color: #f69797;}
+
+
