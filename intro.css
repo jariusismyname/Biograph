@@ -1,0 +1,16 @@
+.slideshow-container {
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  display: none; /* Hide all images initially */
+}
+
+.slide.active {
+  display: block; /* Show the active slide */
+}

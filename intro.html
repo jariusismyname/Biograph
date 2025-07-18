@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="intro.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="slideshow-container">
+  <img class="slide" src="hotel.jpg" alt="Image 1">
+  <img class="slide" src="samplepic.jpg" alt="Image 2">
+  <img class="slide" src="me.png" alt="Image 3">
+</div>
+
+</body>
+</html>
+
+
+    <script>
+  let slideIndex = 0;
+  const slides = document.getElementsByClassName("slide");
+
+  function showSlide() {
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].classList.remove("active");
+    }
+
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1; }
+
+    slides[slideIndex - 1].classList.add("active");
+
+    setTimeout(showSlide, 3000); // Change image every 3 seconds
+  }
+
+  showSlide();
+
+</script>
