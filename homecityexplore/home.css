@@ -92,7 +92,7 @@ body {
   border-radius: 5px;
   outline: none;
   background-color: #ede8e8;
-  color: #ffffff;
+  color: #090808;
   font-size: 14px;
 }
 
@@ -112,4 +112,47 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+
+
+
+/* services */
+.carousel-container {
+  width: 90%;
+  margin: 0 auto;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: auto 0; /* Adjusted padding for better spacing */
+    scrollbar-width: none;
+
+}
+
+.carousel {
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.2);
+  background-color: rgb(222, 240, 244);
+}
+
+.carousel-item img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  
+}
+
+.services{
+    padding-top: 70px;
+    padding-left: 20px;
 }
