@@ -1,9 +1,11 @@
 .slideshow-container {
+  padding-top: 0%;
   width: 100%;
   max-width: 600px; /* Adjust as needed */
   position: relative;
   margin: auto;
   overflow: hidden;
+  padding-bottom: 20px;
 }
 
 .slide {
@@ -13,4 +15,64 @@
 
 .slide.active {
   display: block; /* Show the active slide */
+}
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 20px auto;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #04AA6D;
+   margin: auto;
+   border-radius: 15px;
+
+}
+
+.button1:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.intro {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 0;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+text-align: center;
+}
+
+.skip {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+  text-align: right;
+  padding-top: 50%;
 }
