@@ -11,6 +11,7 @@
 .slide {
   width: 100%;
   display: none; /* Hide all images initially */
+  border-radius: 20px;
 }
 
 .slide.active {
@@ -30,13 +31,14 @@
 }
 
 .button1 {
-  background-color: white;
+  background-color: rgb(96, 238, 86);
   color: black;
-  border: 2px solid #04AA6D;
+  border: 2px solid rgb(96, 238, 86);
    margin: auto;
    border-radius: 15px;
 
-}
+  }
+
 
 .button1:hover {
   background-color: #04AA6D;
