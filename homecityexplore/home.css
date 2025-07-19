@@ -1,3 +1,5 @@
+/* topbar */
+
 /* Style the navigation menu */
 .topnav {
   overflow: hidden;
@@ -59,7 +61,7 @@ text-align: center;}
 
 
 
-
+/* search */
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
@@ -68,7 +70,7 @@ body {
 }
 
 .wrap {
-    color: aquamarine;
+    color: rgb(127, 212, 255);
   width: 90%;
   position: absolute;
   top: 10%;
@@ -86,7 +88,7 @@ body {
 
 .searchTerm {
   flex: 1;
-  border: 0px solid #00cc4e;
+  border: 0px solid rgb(127, 212, 255);
   padding: 4px 8px; /* Reduced padding */
   height: 32px; /* Slimmer height */
   border-radius: 5px;
@@ -103,8 +105,8 @@ body {
 .searchButton {
   width: 40px;
   height: 32px;
-  border: 2px solid #00cc4e;
-  background: #00cc4e;
+  border: 2px solid rgb(130, 212, 254);
+  background: rgb(130, 212, 254);
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
@@ -175,7 +177,7 @@ body {
       padding-left: 200px;
 
    /* padding-right: 50px; */
-   padding-bottom: 50px;
+   padding-bottom: 20px;
    scrollbar-width: none;
 
 }
@@ -210,3 +212,103 @@ body {
 .restaurants{
     padding-left: 20px;
 }
+
+
+
+
+
+
+
+
+/* nearby-places */
+.nearby-places {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: #333;
+  padding-left: 20px;
+  padding-top: 0px;
+}
+
+
+
+
+
+/* nearby places */
+
+  body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            /* padding: 20px; */
+        }
+
+        .card {
+            display: flex;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            max-width: 800px;
+            margin: auto;
+            padding-bottom: 20%;
+            padding-top: 10px;
+            padding-left: 20px;
+          }
+
+
+        .card img {
+          border-radius: 20px;
+            width: 33.33%;
+            object-fit: square;
+        }
+
+        .card-content {
+            width: 66.66%;
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .card-details {
+            font-size: 16px;
+            color: #555;
+        }
+
+
+
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;   /* Make sure it starts at the very left */
+  right: 0;  /* Make sure it stretches to the right */
+  width: 100%;
+  background: rgb(127, 212, 255);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+
+.nav-item {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  margin-left: 0;
+}
+
+.icon {
+  font-size: 22px;
+  display: block;
+}
+
+.nav-item:hover {
+  color: #430f9c;
+}
+
+
