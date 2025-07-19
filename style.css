@@ -34,9 +34,9 @@
   background-color: rgb(96, 238, 86);
   color: black;
   border: 2px solid rgb(96, 238, 86);
-   margin: auto;
+   margin-bottom:  50px;
    border-radius: 15px;
-padding-bottom: 50px;
+/* padding-bottom: 50px; */
   }
 
 
