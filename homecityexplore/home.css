@@ -156,3 +156,57 @@ body {
     padding-top: 70px;
     padding-left: 20px;
 }
+
+
+
+
+
+
+/* restaurants */
+.restaurants-carousel-container {
+  /* width: 120%; */
+  /* margin: 0 auto; */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  /* padding: auto 0; */
+   /* Adjusted padding for better spacing */
+   padding-top: 10px;
+      padding-left: 200px;
+
+   /* padding-right: 50px; */
+   padding-bottom: 50px;
+   scrollbar-width: none;
+
+}
+
+.restaurants-carousel {
+  display: flex;
+  gap: 10px;
+   padding-left: 200px;
+
+  /* padding-top: 20px; */
+}
+
+.restaurants-carousel-item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 10px 10px 8px 10px #ece8e8;
+  background-color: white;
+  width: 170px;
+  height: 250;
+}
+
+.restaurants-carousel-item img {
+  display: block;
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.restaurants{
+    padding-left: 20px;
+}

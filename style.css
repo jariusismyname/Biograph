@@ -1,74 +1,80 @@
-/* Global Styles */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #fcf8f8, #110505);
-    color: #333;
-    text-align: center;
-}
-
-/* Headings */
-h1.title{
-    font-family: 'Abril Fatface', cursive;
-    font-size: 2.5em;
-    margin-top: 20px;
-    color: #222;
-padding-top: 40px;
-}
-
-
-
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 2000px;
-  left: 0;
- border: 1px solid #201c1c;
-  background-color: #000000;
-
-}
-
-li {
-  float: left;
-}
-
-li a {
-      color: #666;
-
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
-
-.active {
-  background-color: #04AA6D;
-}
-
-/* Style the footer */
-.site-footer {
-  background-color: #333;        /* Dark background */
-  color: #fff;                    /* White text */
-  text-align: center;             /* Centered text */
-  padding: 20px 0;                /* Top & bottom padding */
-  position: relative;             /* For normal flow */
-  bottom: 0;
+.slideshow-container {
+  padding-top: 0%;
   width: 100%;
-  font-size: 14px;
-  left: 0;
-  margin: 0;
+  max-width: 600px; /* Adjust as needed */
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.slide {
+  width: 100%;
+  display: none; /* Hide all images initially */
+  border-radius: 20px;
+}
+
+.slide.active {
+  display: block; /* Show the active slide */
+}
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 20px auto;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: rgb(96, 238, 86);
+  color: black;
+  border: 2px solid rgb(96, 238, 86);
+   margin: auto;
+   border-radius: 15px;
+
+  }
+
+
+.button1:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.intro {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 0;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+text-align: center;
+}
+
+.skip {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+  text-align: right;
+  padding-top: 20%;
 }

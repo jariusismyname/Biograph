@@ -1,26 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Abril Fatface|Poppins|Oswald&effect=fire|emboss">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel System</title>
 </head>
 
+<h6 class="skip">SKIP</h6>
 
 <body>
-  <header class=""></header>
-  <ul>
-  <li><a href="default.asp">Home</a></li>
-  <li><a href="introcityexplore/intro.html">Intro</a></li>
-  <li><a href="contact.asp">Contact</a></li>
-  <li><a href="about.asp">About</a></li>
-</ul>
-<div>
-<h1 class="title">My life</h1>
+    <div class="slideshow-container">
+  <img class="slide" src="../../images/hotel.jpg" alt="Image 1">
+  <img class="slide" src="../../images/samplepic.jpg" alt="Image 2">
+  <img class="slide" src="../../images/me.jpg" alt="Image 3">
 </div>
-<footer class="site-footer">
-  <p>&copy; 2025 Your Company. All rights reserved.</p>
-</footer>
+<h2 class="intro">Navigate Antipolo city like a pro</h2>
+<p>I will be a web developer</p>
+<button onclick="document.location='../homecityexplore/home.html'" class="button button1"  type="button">Next >></button>
 </body>
 </html>
+
+
+    <script>
+  let slideIndex = 0;
+  const slides = document.getElementsByClassName("slide");
+
+  function showSlide() {
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].classList.remove("active");
+    }
+
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1; }
+
+    slides[slideIndex - 1].classList.add("active");
+
+    setTimeout(showSlide, 3000); // Change image every 3 seconds
+  }
+
+  showSlide();
+
+</script>
